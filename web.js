@@ -11,8 +11,8 @@ app.get('/', function(request, response) {
 ;
   
 
-  response.send(mybuff.toString());
-console.log(mybuff.toString());
+  response.send(mybuff);
+console.log(mybuff);
 
 });
 
