@@ -3,16 +3,8 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
- var mybuff =  fs.readFile ('./index.html', function(err, data){
-      if(err) throw err;
-      console.log(data);
-
-     })
-;
-  
-
-  response.send(mybuff);
-console.log(mybuff);
+  response.send("Hello world Again");
+console.log("this Works");
 
 });
 
